@@ -32,8 +32,8 @@ MEMORY
 }
 ENTRY(Reset_Handler)
 
-_Min_Heap_Size = 0x300000 ;        /* Required amount of heap. */
-_Min_Stack_Size = 0x4000 ;       /* Required amount of stack. */
+_Min_Heap_Size = 1M ;        /* Required amount of heap. */
+_Min_Stack_Size = 256K ;       /* Required amount of stack. */
 M_VECTOR_RAM_SIZE = (16 + 48) * 4;
 _estack = ORIGIN(RAM) + LENGTH(RAM);
 

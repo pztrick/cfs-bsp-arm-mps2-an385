@@ -52,7 +52,7 @@ SECTIONS
         . = ALIGN(4);
         *(.ARM.extab* .gnu.linkonce.armextab.*)
         . = ALIGN(4);
-    } >FLASH
+    } > FLASH
 
     .ARM :
     {
@@ -61,7 +61,7 @@ SECTIONS
         *(.ARM.exidx* .gnu.linkonce.armexidx.*)
         __exidx_end = .;
         . = ALIGN(4);
-    } >FLASH
+    } > FLASH
 
     .text :
     {
@@ -116,7 +116,7 @@ SECTIONS
         . = ALIGN(4);
         _ebss = .;
         __bss_end__ = _ebss;
-    } >RAM
+    } > RAM
 
     .heap :
     {
@@ -128,7 +128,7 @@ SECTIONS
         _heap_top = .;
         . = . + _Min_Stack_Size;
         . = ALIGN(8);
-       } >RAM
+    } > RAM
 
    /* Set stack top to end of RAM, and stack limit move down by
     * size of stack_dummy section */

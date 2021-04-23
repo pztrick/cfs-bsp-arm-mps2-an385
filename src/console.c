@@ -1,3 +1,8 @@
+/*
+ * Copyright 2021 Patrick Paul
+ * SPDX-License-Identifier: MIT-0
+ */
+
 #include <stdlib.h>
 
 #include "osapi.h"

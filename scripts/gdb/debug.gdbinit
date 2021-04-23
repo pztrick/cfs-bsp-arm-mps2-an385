@@ -1,3 +1,6 @@
+# Copyright 2021 Patrick Paul
+# SPDX-License-Identifier: MIT-0
+
 define lp
     target ext localhost:5555
     file build-mps2/cortex-m3/default_mps2/mps2/core-mps2

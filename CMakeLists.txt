@@ -1,3 +1,8 @@
+#[[
+    Copyright 2021 Patrick Paul
+    SPDX-License-Identifier: MIT-0
+]]
+
 if(NOT DEFINED OSAL_FREERTOS_CONFIG_H_DIR)
     message(FATAL_ERROR "You must set OSAL_FREERTOS_CONFIG_H_DIR to the location of FreeRTOSConfig.h for your BSP in arch_build_custom.cmake")
 endif()

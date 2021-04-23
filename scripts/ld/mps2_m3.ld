@@ -1,5 +1,6 @@
 /*
  * FreeRTOS
+ *
  * Copyright (C) 2020 Amazon.com, Inc. or its affiliates.  All Rights Reserved.
  * Copyright (C) 2021 Patrick Paul
  *
@@ -22,6 +23,8 @@
  *
  * https://www.FreeRTOS.org
  * https://github.com/FreeRTOS
+ *
+ * SPDX-License-Identifier: MIT
  *
  */
 

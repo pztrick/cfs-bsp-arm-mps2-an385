@@ -22,6 +22,8 @@
  * https://www.FreeRTOS.org
  * https://github.com/FreeRTOS
  *
+ * SPDX-License-Identifier: MIT
+ *
  */
 
 /*-----------------------------------------------------------

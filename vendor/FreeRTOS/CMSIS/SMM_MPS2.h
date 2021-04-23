@@ -1,5 +1,5 @@
 /*
-* copyright (c) 2006-2016 ARM Limited
+* Copyright (c) 2006-2016 ARM Limited
 * SPDX-License-Identifier: BSD-3-Clause
 * All rights reserved.
 *

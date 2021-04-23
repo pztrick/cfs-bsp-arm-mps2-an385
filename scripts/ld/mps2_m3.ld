@@ -1,6 +1,7 @@
 /*
- * FreeRTOS V202012.00
+ * FreeRTOS
  * Copyright (C) 2020 Amazon.com, Inc. or its affiliates.  All Rights Reserved.
+ * Copyright (C) 2021 Patrick Paul
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy of
  * this software and associated documentation files (the "Software"), to deal in
@@ -46,19 +47,6 @@ SECTIONS
         . = ALIGN(4);
     } > FLASH
 
-    .text :
-    {
-        . = ALIGN(4);
-        *(.text*)
-        KEEP (*(.init))
-        KEEP (*(.fini))
-        KEEP(*(.eh_frame))
-        *(.rodata*)
-        . = ALIGN(4);
-        _etext = .;
-        _sidata = _etext;
-    } > FLASH
-
     .ARM.extab :
     {
         . = ALIGN(4);
@@ -74,6 +62,19 @@ SECTIONS
         __exidx_end = .;
         . = ALIGN(4);
     } >FLASH
+
+    .text :
+    {
+        . = ALIGN(4);
+        *(.text*)
+        KEEP (*(.init))
+        KEEP (*(.fini))
+        KEEP(*(.eh_frame))
+        *(.rodata*)
+        . = ALIGN(4);
+        _etext = .;
+        _sidata = _etext;
+    } > FLASH
 
     .interrupts_ram :
     {
